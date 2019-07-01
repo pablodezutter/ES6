@@ -33,10 +33,10 @@ for (let i = 0; i < list.length; i++) {
 
 console.log(i); // app crash -> bracket scoped
 
-v.s. 
+//v.s.
 
 for (var i = 0; i < list.length; i++) {
-    console.log(i);
-  }
-  
   console.log(i);
+}
+
+console.log(i);
