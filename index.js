@@ -1,5 +1,5 @@
- //Thank you Dev Ed for your nice YouTubechannel!
- //Old school JS
+//Thank you Dev Ed for your nice YouTubechannel!
+//Old school JS
 
 // var namesList = ["Ed", "John", "Mike"];
 // var counter = 10;
@@ -57,18 +57,15 @@
 
 // }
 
-
 // };
 
 // user.sayName();
 
-
-
-
 //ES 6
 
-const todoList = ["Milk", "Cow"];
-todoList = ["Milk"]; // cannot re-assign data
+// const todoList = ["Milk", "Cow"];
+//  todoList = ["Milk"];
+// cannot re-assign data
 
 // let counter = 10;
 
@@ -76,93 +73,98 @@ todoList = ["Milk"]; // cannot re-assign data
 
 //global & functional & block scoping
 
-const list = [1, 2, 3, 4, 5];
+// const list = [1, 2, 3, 4, 5];
 
-for (let i = 0; i < list.length; i++) {
-  console.log(i);
-}
+// for (let i = 0; i < list.length; i++) {
+//   console.log(i);
+// }
 
-console.log(i); // app crash -> let and const bracket scoped
+// console.log(i); // app crash -> let and const bracket scoped
 
-//v.s.
+// //v.s.
 
-for (var i = 0; i < list.length; i++) {
-  console.log(i);
-}
+// for (var i = 0; i < list.length; i++) {
+//   console.log(i);
+// }
 
-console.log(i);
+// console.log(i);
 
-// const name = "Pablo";
-const age = 25;
+// // const name = "Pablo";
+// const age = 25;
 
-console.log(`Hello my it's "hello" name is §{name}and my age is{age} `); //  string concat with backticks
+// console.log(`Hello my it's "hello" name is §{name}and my age is{age} `); //  string concat with backticks
 
-function showBook(title, author) {
-  return {
-    title,
-    author // don't have to repeat yourself
-  };
-}
-var book = getBook("Harry Potter", "JK");
-console.log(book);
+// function getBook(title, author) {
+//   return {
+//     title,
+//     author // don't have to repeat yourself
+//   };
+// }
+// var book = getBook("Harry Potter", "JK");
+// console.log(book);
 
+// const lijst = {
+//   name: "Shopping List",
+//   items: ["Milk", "Cow"]
+// };
 
-const list= {
+// // const  {name, items} = list;
+// console.log(name, items);
 
-name: 'Shopping List',
-items: ['Milk', 'Cow']
+// const sayLocation = () => {
+//   console.log("my location is Ghent");
+// };
 
+// const sayLocation = location => {
+//   console.log(`my location is ${location}`);
+// };
+// sayLocation(`Ghent`);
 
-}
+//same as
 
-const  {name, items} = list;
-console.log(name, items);
+// const sayLocation = location => {
+//   console.log(`my location is ${location}`);
+// };
+// sayLocation(`Ghent`);
 
+//if you return just one thing, you can loose the { }
 
-const sayLocation =() => {
-console.log("my location is Ghent")
-};
+// const sayLocation = (location, name) =>
+//   console.log(`my location is ${location}`);
 
-const sayLocation =(location) => {
-  console.log(`my location is ${location}`);
-  };
-  sayLocation(`Ghent`);
+// sayLocation(`Ghent`);
 
-  //same as
+// const user = {
+//   name: "Pablo",
+//   age: 38,
+//   sayName: function() {
+//     console.log(`My name is ${this.name}`);
+//     const fullName = () => {
+//       //still referring to user
+//       console.log(`My name is $ {this.name} and my age is ${age}`);
+//     };
+//     fullName();
+//   }
+// };
+// user.sayName();
 
+// //practical example
 
-  const sayLocation = location => {
-    console.log(`my location is ${location}`);
-    };
-    sayLocation(`Ghent`);
+// button.addEventListener("click", function() {
+//   var addFade = () => {
+//     this.style.display = "none";
+//   };
+// });
 
-    //if you return just one thing, you can loose the { }
+// const add = (c = 1, d = 1) => {
+//   console.log(c + d);
+// };
 
-    const sayLocation = (location,name) => console.log(`my location is ${location}`);
-      
-      sayLocation(`Ghent`);
+// add();
 
-      const user= {
-name: 'Pablo',
-age: 38, 
-sayName: function(){
-console.log('My name is ${this.name}`);
-const fullName = () => {//still referring to user
-console.log(`My name is $ {this.name} and my age is ${age}`);
-
-};
-fullName();
-
-}
-
-      };
-      user.sayName();
-
-  //practical example
-
-  button.addEventListener("click", function({
-var addFade = function()=>{
-  this.style.display= 'none';
-};
-
-  }))
+const shoppingList = ["Milk", "Cow", "Eggs", "Bananas", "Choco"];
+//forEach
+shoppingList.forEach((product, index) => {
+  //console.log(product + "nice");
+  console.log(`The index is ${index} and the product is ${product}`);
+});
