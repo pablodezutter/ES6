@@ -1,66 +1,66 @@
-//Thank you Dev Ed for your nice YouTubechannel!
-//Old school JS
+ //Thank you Dev Ed for your nice YouTubechannel!
+ //Old school JS
 
-var namesList = ["Ed", "John", "Mike"];
-var counter = 10;
-var counter = 5; //This is a problem, you can re-define the var
+// var namesList = ["Ed", "John", "Mike"];
+// var counter = 10;
+// var counter = 5; //This is a problem, you can re-define the var
 
-function sayName() {
-  var name = "Ed";
-  console.log(name);
-}
-console.log(name);
-sayName();
+// function sayName() {
+//   var name = "Ed";
+//   console.log(name);
+// }
+// console.log(name);
+// sayName();
 
-console.log(counter);
-var name = "Ed";
-console.log("Hello my name is" + name);
+// console.log(counter);
+// var name = "Ed";
+// console.log("Hello my name is" + name);
 
-function showBook(title, author) {
-  return {
-    title: title,
-    author: author
-  };
-}
-var book = getBook("Harry Potter", "JK");
-console.log(book);
+// function showBook(title, author) {
+//   return {
+//     title: title,
+//     author: author
+//   };
+// }
+// var book = getBook("Harry Potter", "JK");
+// console.log(book);
 
-var user ={
-  name='Ed',
-  age= 25
-};
-var myName = user.name;
-console.log(myName);
+// var user ={
+//   name : 'Pablo',
+//   age : 25
+// };
+// var myName = user.name;
+// console.log(myName);
 
-function sayName(){
-console.log("Hello I am Pablo");
+// function sayName(){
+// console.log("Hello I am Pablo");
 
-}
+// }
 
-var sayAge= function(){
-console.log("My age is 38");
+// var sayAge= function(){
+// console.log("My age is 38");
 
-}
-sayName();
-sayAge();
+// }
+// sayName();
+// sayAge();
 
-var user= {
-name: 'Pablo',
-age: 38,
-sayName: function (){
-  console.log("My name is " + this.name); //this = user.name
-  var fullName = function(){
-console.log ("My name is " + this.name + "and my age is " + this.age);
+// var user= {
+// name: 'Pablo',
+// age: 38,
+// sayName: function (){
+//   console.log("My name is " + this.name); //this = user.name
+//   var fullName = function(){
+// console.log ("My name is " + this.name + "and my age is " + this.age);
 
-  };
-  fullName();//my name is undefined and my age is undefined, context is not object anymore, not calling user.fullName!
+//   };
+//   fullName();my name is undefined and my age is undefined, context is not object anymore, not calling user.fullName!
 
-}
+// }
 
 
-};
+// };
 
-user.sayName();
+// user.sayName();
 
 
 
@@ -70,9 +70,9 @@ user.sayName();
 const todoList = ["Milk", "Cow"];
 todoList = ["Milk"]; // cannot re-assign data
 
-let counter = 10;
+// let counter = 10;
 
-counter = 5; // you can re-assign data
+//  counter = 5; // you can re-assign data
 
 //global & functional & block scoping
 
@@ -92,7 +92,7 @@ for (var i = 0; i < list.length; i++) {
 
 console.log(i);
 
-const name = "Ed";
+// const name = "Pablo";
 const age = 25;
 
 console.log(`Hello my it's "hello" name is §{name}and my age is{age} `); //  string concat with backticks
@@ -147,7 +147,7 @@ name: 'Pablo',
 age: 38, 
 sayName: function(){
 console.log('My name is ${this.name}`);
-const fullName=()=>{//still referring to user
+const fullName = () => {//still referring to user
 console.log(`My name is $ {this.name} and my age is ${age}`);
 
 };
